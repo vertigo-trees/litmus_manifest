@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote name="vertigo-trees"
+          fetch="https://github.com/vertigo-trees"
+          revision="thirteen" />
+
+  <project path="device/xiaomi/alioth" name="device_xiaomi_alioth" remote="vertigo-trees" />
+  <project path="device/xiaomi/sm8250-common" name="device_xiaomi_sm8250-common" remote="vertigo-trees" />
+  <project path="kernel/xiaomi/sm8250" name="kernel_xiaomi_sm8250" remote="vertigo-trees" />
+  <project path="vendor/xiaomi/alioth" name="vendor_xiaomi_alioth" remote="vertigo-trees" />
+  <project path="vendor/xiaomi/sm8250-common" name="vendor_xiaomi_sm8250-common" remote="vertigo-trees" />
+  <project path="hardware/xiaomi" name="hardware_xiaomi" remote="pixel" />
+
+  
+  <project path="external/deqp-deps/SPIRV-Headers" name="external_SPIRV-Headers" remote="vertigo-trees" />
+  <project path="external/igt-gpu-tools" name="external_igt-gpu-tools" remote="vertigo-trees" />
+</manifest>
