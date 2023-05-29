@@ -1,3 +1,5 @@
+### This repo is for my personal use only kindly do not bother me with question like why did you track your device tree in rom manifest, you will recieve no response ###
+
 <p align="center">
 
 <img src="https://github.com/litmusos/manifest/blob/thirteen/Litmus.png">
