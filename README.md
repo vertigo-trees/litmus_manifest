@@ -13,14 +13,14 @@
 ```bash
 
 # Initialize local repository
-repo init -u https://github.com/litmusos/manifest -b thirteen
+repo init -u https://github.com/vertigo-trees/litmus_manifest -b thirteen
 
 ```
 
 ```bash
 
 # Sync
-repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
+repo sync -c -j$100 --force-sync --no-clone-bundle --no-tags
 
 ```
 
