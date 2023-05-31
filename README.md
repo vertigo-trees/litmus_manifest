@@ -29,7 +29,7 @@ repo sync -c -j$100 --force-sync --no-clone-bundle --no-tags
 ```bash
 
 # Set up environment
-$ . build/envsetup.sh
+$ source build/envsetup.sh
 
 # Choose a target
 $ lunch aosp_$device-userdebug
