@@ -24,7 +24,7 @@
           revision="thirteen" />
 
   <remote name="litmus"
-          fetch="https://github.com/litmusos"
+          fetch="https://github.com/litmusos-mirror"
           revision="thirteen" />
 
   <remote name="vertigo"
@@ -48,18 +48,23 @@
   <project path="external/toybox" name="external_toybox" remote="pixel" />
   <project path="external/wpa_supplicant_8" name="external_wpa_supplicant_8" remote="pixel" />
 
+
+  <project path="device/google/cuttlefish" name="device_google_cuttlefish" remote="pixel" />
+  <project path="kernel/configs" name="kernel_configs" remote="pixel" />
+
+
   <!-- Framework repos -->
   <project path="frameworks/av" name="frameworks_av" remote="litmus" />
-  <project path="frameworks/base" name="litmus_frameworks_base" remote="vertigo" />
-  <project path="frameworks/native" name="frameworks_native" remote="pixel-plus" />
-  <project path="frameworks/opt/net/ims" name="frameworks_opt_net_ims" remote="pixel" />
-  <project path="frameworks/opt/net/wifi" name="frameworks_opt_net_wifi" remote="pixel" />
-  <project path="frameworks/opt/telephony" name="frameworks_opt_telephony" remote="pixel" />
-  <project path="frameworks/opt/timezonepicker" name="frameworks_opt_timezonepicker" remote="pixel" />
+  <project path="frameworks/base" name="litmus_frameworks_base" remote="litmus" />
+  <project path="frameworks/native" name="frameworks_native" remote="litmus" />
+  <project path="frameworks/opt/net/ims" name="frameworks_opt_net_ims" remote="litmus" />
+  <project path="frameworks/opt/net/wifi" name="frameworks_opt_net_wifi" remote="litmus" />
+  <project path="frameworks/opt/telephony" name="frameworks_opt_telephony" remote="litmus" />
+  <project path="frameworks/opt/timezonepicker" name="frameworks_opt_timezonepicker" remote="litmus" />
 
   <!-- General repos -->
-  <project path="art" name="art" remote="pixel" />
-  <project path="bionic" name="bionic" remote="pixel" />
+  <project path="art" name="art" remote="litmus" />
+  <project path="bionic" name="bionic" remote="litmus" />
   <project path="build/make" name="build" remote="litmus">
     <copyfile src="core/root.mk" dest="Makefile" />
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
@@ -73,14 +78,12 @@
     <linkfile src="root.bp" dest="Android.bp" />
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
-  <project path="build/blueprint" name="build_blueprint" remote="pixel" />
-  <project path="bootable/recovery" name="bootable_recovery" remote="pixel" />
-  <project path="development" name="development" remote="pixel" />
-  <project path="device/google/cuttlefish" name="device_google_cuttlefish" remote="pixel" />
-  <project path="kernel/configs" name="kernel_configs" remote="pixel" />
+  <project path="build/blueprint" name="build_blueprint" remote="litmus" />
+  <project path="bootable/recovery" name="bootable_recovery" remote="litmus" />
+  <project path="development" name="development" remote="litmus" />
   <project path="manifest" name="manifest" remote="litmus" />
-  <project path="libcore" name="libcore" remote="pixel" />
-  <project path="platform_testing" name="platform_testing" remote="pixel" />
+  <project path="libcore" name="libcore" remote="litmus" />
+  <project path="platform_testing" name="platform_testing" remote="litmus" />
 
   <!-- Hardware repos -->
   <project path="hardware/broadcom/libbt" name="hardware_broadcom_libbt" remote="pixel" />
@@ -118,7 +121,7 @@
   <project path="packages/apps/CarrierConfig" name="packages_apps_CarrierConfig" remote="pixel" />
   <project path="packages/apps/Nfc" name="packages_apps_Nfc" remote="pixel" />
   <project path="packages/apps/PhoneCommon" name="packages_apps_PhoneCommon" remote="pixel" />
-  <project path="packages/apps/Settings" name="packages_apps_Settings" remote="vertigo" />
+  <project path="packages/apps/Settings" name="packages_apps_Settings" remote="litmus" />
   <project path="packages/apps/Stk" name="packages_apps_Stk" remote="pixel" />
   <project path="packages/apps/Traceur" name="packages_apps_Traceur" remote="pixel" />
   <project path="packages/modules/adb" name="packages_modules_adb" remote="pixel" />
@@ -138,9 +141,9 @@
   <project path="prebuilts/build-tools" name="prebuilts_build-tools" remote="pixel" clone-depth="1" />
 
   <!-- System Repos -->
-  <project path="system/bpf" name="system_bpf" remote="pixel" />
+  <project path="system/bpf" name="system_bpf" remote="litmus" />
   <project path="system/core" name="system_core" remote="pixel" />
-  <project path="system/extras" name="system_extras" remote="pixel" />
+  <project path="system/extras" name="system_extras" remote="litmus" />
   <project path="system/incremental_delivery" name="system_incremental_delivery" remote="pixel" />
   <project path="system/libhidl" name="system_libhidl" remote="pixel" />
   <project path="system/libhwbinder" name="system_libhwbinder" remote="pixel" />
