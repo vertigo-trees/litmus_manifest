@@ -79,7 +79,7 @@
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
   <project path="build/blueprint" name="build_blueprint" remote="litmus" />
-  <project path="bootable/recovery" name="bootable_recovery" remote="litmus" />
+  <project path="bootable/recovery" name="bootable_recovery" remote="pixel" />
   <project path="development" name="development" remote="litmus" />
   <project path="manifest" name="manifest" remote="litmus" />
   <project path="libcore" name="libcore" remote="litmus" />
